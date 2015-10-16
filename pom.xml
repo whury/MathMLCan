@@ -25,8 +25,8 @@
     
     <scm>
         <url>https://github.com/whury/MathMLCan</url>
-        <connection>scm:git:git://github.com/whury/MathMLCan.git</connection>
-        <developerConnection>scm:git:git@github.com:whury/MathMLCan.git</developerConnection>
+        <connection>scm:git:https://github.com/whury/MathMLCan.git</connection>
+        <developerConnection>scm:git:https://github.com/whury/MathMLCan.git</developerConnection>
     </scm>
     
     <developers>
