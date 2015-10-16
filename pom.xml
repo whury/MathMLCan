@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cz.muni.fi.mir</groupId>
+    <groupId>eu.eudml</groupId>
     <artifactId>mathml-canonicalizer</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <packaging>jar</packaging>
     
     <name>MathMLCanonicalizer</name>
@@ -22,11 +21,14 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+    
     <scm>
-        <url>https://mir.fi.muni.cz/svn/software/mathml-canonicalizer</url>
-        <developerConnection>scm:svn:https://mir.fi.muni.cz/svn/software/mathml-canonicalizer</developerConnection>
-        <connection>scm:svn:https://mir.fi.muni.cz/svn/software/mathml-canonicalizer</connection>
-    </scm>
+        <url>https://github.com/whury/MathMLCan</url>
+        <connection>scm:git:https://github.com/whury/MathMLCan.git</connection>
+        <developerConnection>scm:git:https://github.com/whury/MathMLCan.git</developerConnection>
+      <tag>v1.2.1</tag>
+  </scm>
+    
     <developers>
         <developer>
             <id>ruzicka</id>
@@ -180,13 +182,20 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
     <distributionManagement>
+        <snapshotRepository>
+            <id>eudml-snapshots</id>
+            <name>EuDML snapshots</name>
+            <url>http://maven.eudml.eu/artifactory/eudml-snapshots</url>
+        </snapshotRepository>
         <repository>
-            <id>nexus-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>eudml-releases</id>
+            <name>EuDML releases</name>
+            <url>http://maven.eudml.eu/artifactory/eudml-releases</url>
         </repository>
     </distributionManagement>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
